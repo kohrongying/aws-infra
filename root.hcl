@@ -31,7 +31,7 @@ terraform {
 EOF
 }
 
-inputs {
+inputs = {
   environment = local.env_vars.locals
   project     = local.project_vars.locals
 }

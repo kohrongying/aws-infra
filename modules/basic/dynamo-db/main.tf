@@ -16,7 +16,7 @@ resource "aws_dynamodb_table" "this" {
   }
   
   tags = {
-    Environment = var.environment
+    Environment = var.environment.name
     Project = var.project.name
   }
 }
