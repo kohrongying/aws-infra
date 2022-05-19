@@ -1,13 +1,13 @@
 variable "environment" {
-    type = object({
-        name = string
-    })
+  type = object({
+    name = string
+  })
 }
 
 variable "project" {
-    type = object({
-        name = string
-    })
+  type = object({
+    name = string
+  })
 }
 
 variable "name" {}
@@ -23,8 +23,8 @@ variable "hash_key" {}
 variable "range_key" {}
 
 variable "attributes" {
-    type = list(object({
-        name = string
-        type = string
-    }))
+  type = list(object({
+    name = string
+    type = string
+  }))
 }

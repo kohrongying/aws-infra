@@ -7,16 +7,16 @@ resource "aws_dynamodb_table" "this" {
   range_key      = var.range_key
 
   dynamic "attribute" {
-      for_each = var.attributes
+    for_each = var.attributes
 
-      content {
-          name = attribute.value["name"]
-          type = attribute.value["type"]
-      }
+    content {
+      name = attribute.value["name"]
+      type = attribute.value["type"]
+    }
   }
-  
+
   tags = {
     Environment = var.environment.name
-    Project = var.project.name
+    Project     = var.project.name
   }
 }
