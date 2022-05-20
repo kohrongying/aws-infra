@@ -20,6 +20,12 @@ terraform {
 
 provider "aws" {
   region = "${local.region}"
+  default_tags {
+    tags = {
+      Environment = "${local.env_vars.locals.name}"
+      Project     = "${local.project_vars.locals.name}"
+    }
+  }
 }
 EOF
 }

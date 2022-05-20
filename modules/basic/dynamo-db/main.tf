@@ -15,8 +15,5 @@ resource "aws_dynamodb_table" "this" {
     }
   }
 
-  tags = {
-    Environment = var.environment.name
-    Project     = var.project.name
-  }
+  tags = merge(var.tags, {})
 }
