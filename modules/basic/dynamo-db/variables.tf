@@ -30,6 +30,6 @@ variable "attributes" {
 }
 
 variable "tags" {
-  type = object({})
+  type    = object({})
   default = {}
 }
