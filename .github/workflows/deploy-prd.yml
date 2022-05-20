@@ -14,7 +14,7 @@ jobs:
         with:
           terraform_version: ${{ env.tf_version }}
       - name: Run terraform fmt check
-        run: terraform fmt -check -diff -recursive ${{ env.tf_working_dir }}
+        run: make fmt
   
   plan_prd:
     needs: lint
