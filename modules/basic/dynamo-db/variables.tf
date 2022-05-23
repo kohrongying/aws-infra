@@ -15,12 +15,12 @@ variable "name" {}
 variable "billing_mode" {}
 
 variable "read_capacity" {
-  type = number
+  type    = number
   default = 0
 }
 
 variable "write_capacity" {
-  type = number
+  type    = number
   default = 0
 }
 
