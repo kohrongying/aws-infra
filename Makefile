@@ -1,4 +1,7 @@
 fmt:
+	terraform fmt -recursive ./modules
+
+fmt-all:
 	terragrunt hclfmt && terraform fmt -recursive ./modules
 
 plan-dev:
