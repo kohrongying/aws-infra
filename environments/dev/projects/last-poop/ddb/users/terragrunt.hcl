@@ -16,9 +16,7 @@ inputs = {
   name         = "ddb-${local.project_vars.locals.name}-${local.env_vars.locals.name}-users"
   billing_mode = local.config_vars.locals.billing_mode
   hash_key     = "Email"
-  range_key    = "Name"
   attributes = [
     { name = "Email", type = "S" },
-    { name = "Name", type = "S" }
   ]
 }

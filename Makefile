@@ -6,3 +6,6 @@ fmt-all:
 
 plan-dev:
 	terragrunt run-all plan --terragrunt-working-dir environments/dev/
+
+apply-dev:
+	terragrunt run-all apply --terragrunt-working-dir environments/dev/

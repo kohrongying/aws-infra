@@ -26,7 +26,9 @@ variable "write_capacity" {
 
 variable "hash_key" {}
 
-variable "range_key" {}
+variable "range_key" {
+  default = ""
+}
 
 variable "attributes" {
   type = list(object({
