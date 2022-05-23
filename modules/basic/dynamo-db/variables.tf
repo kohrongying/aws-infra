@@ -14,9 +14,15 @@ variable "name" {}
 
 variable "billing_mode" {}
 
-variable "read_capacity" {}
+variable "read_capacity" {
+  type = number
+  default = 0
+}
 
-variable "write_capacity" {}
+variable "write_capacity" {
+  type = number
+  default = 0
+}
 
 variable "hash_key" {}
 

@@ -15,12 +15,10 @@ terraform {
 inputs = {
   name           = "ddb-${local.project_vars.locals.name}-${local.env_vars.locals.name}-users"
   billing_mode   = local.config_vars.locals.billing_mode
-  read_capacity  = local.config_vars.locals.read_capacity
-  write_capacity = local.config_vars.locals.write_capacity
-  hash_key       = "Id"
+  hash_key       = "Email"
   range_key      = "Name"
   attributes = [
-    { name = "Id", type = "S" },
+    { name = "Email", type = "S" },
     { name = "Name", type = "S" }
   ]
 }
