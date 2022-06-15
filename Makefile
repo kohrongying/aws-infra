@@ -9,3 +9,6 @@ plan-dev:
 
 apply-dev:
 	terragrunt run-all apply --terragrunt-working-dir environments/dev/
+
+del-cache:
+	find . -type d -name ".terragrunt-cache" -prune -exec rm -rf {} \;
