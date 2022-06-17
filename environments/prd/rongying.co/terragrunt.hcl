@@ -14,10 +14,10 @@ inputs = {
   domain_name = "rongying.co"
   records     = [
     {
-      name    = "rongying.co"
+      name    = "gatsby-newspaper.rongying.co"
       type    = "CNAME"
       ttl     = "3600"
-      records = ["rongying.netlify.app"]
+      records = ["gatsby-minimal-blog-starter.netlify.app"]
     },
     {
       name    = "www.rongying.co"
@@ -36,12 +36,6 @@ inputs = {
       type    = "CNAME"
       ttl     = "3600"
       records = ["eleventy-blog-starter.netlify.app"]
-    },
-    {
-      name    = "blog.rongying.co"
-      type    = "CNAME"
-      ttl     = "3600"
-      records = ["blog-rongying.netlify.app"]
     },
     {
       name    = "todayilearn.rongying.co"
