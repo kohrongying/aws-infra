@@ -42,6 +42,12 @@ inputs = {
       type    = "CNAME"
       ttl     = "3600"
       records = ["todayrylearn.netlify.app"]
+    },
+    {
+      name    = "rongying.co"
+      type    = "A"
+      ttl     = "3600"
+      records = ["75.2.60.5"]
     }
   ]
 }
